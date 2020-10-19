@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sohne-var;
+  font-size: 18px; }
+
+figure {
+  padding: 0;
+  margin: 0; }
+
+a {
+  display: flex; }
+
+body {
+  background: linear-gradient(90deg, #164964 0%, #0d4530 47%, #164964 100%);
+  background-size: 400% 500%;
+  animation: degrado 10s ease infinite; }
+
+.fondo_animado #btn_carrito {
+  display: none; }
+
+.fondo_animado .contenedor-carrito {
+  width: 450px; }
+
+.fondo_animado .boton {
+  margin-top: 10px;
+  background: #2D3139;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  -webkit-box-shadow: -18px 15px 31px -3px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -18px 15px 31px -3px rgba(0, 0, 0, 0.67);
+  box-shadow: -18px 15px 31px -3px rgba(0, 0, 0, 0.67); }
+
+.fondo_animado .tres {
+  background-color: #550028;
+  color: white; }
+
+.fondo_animado .boton:hover {
+  background: #6A6A6A;
+  cursor: pointer; }
+
+.fondo_animado header #nav .contenedor-formulario {
+  position: relative; }
+  .fondo_animado header #nav .contenedor-formulario .formulario {
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    width: 380px;
+    background-color: #164964;
+    top: 80px;
+    right: -85px; }
+
+.fondo_animado header nav {
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+  height: 80px;
+  margin-bottom: 20px; }
+  .fondo_animado header nav input[type=text] {
+    margin: 20px;
+    background-image: url("../img/iconos/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+    border: 1px solid #6EFFE2;
+    border-radius: 15px;
+    color: white;
+    padding: 0 20px; }
+  .fondo_animado header nav .btn {
+    height: 60px;
+    margin: auto 10px; }
+  .fondo_animado header nav .boton {
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .fondo_animado header nav .boton:hover {
+    background-color: #31383b49; }
+  .fondo_animado header nav ul {
+    display: flex; }
+    .fondo_animado header nav ul li {
+      list-style: none;
+      display: flex; }
+      .fondo_animado header nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        margin-left: 40px;
+        display: flex;
+        align-items: center; }
+
+.fondo_animado header .menu {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px; }
+  .fondo_animado header .menu .contenedor-grid {
+    position: relative; }
+    .fondo_animado header .menu .contenedor-grid .grid {
+      background: linear-gradient(90deg, #125c61 0%, #0d4539 47%, #164964 100%);
+      width: 80vw;
+      display: none;
+      position: absolute;
+      top: 78px;
+      z-index: 1000;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "categorias sub sub sub"; }
+      .fondo_animado header .menu .contenedor-grid .grid a {
+        display: flex;
+        align-items: center; }
+      .fondo_animado header .menu .contenedor-grid .grid a:hover {
+        background-color: rgba(0, 0, 0, 0.5); }
+      .fondo_animado header .menu .contenedor-grid .grid .categorias {
+        grid-area: categorias;
+        overflow: auto; }
+        .fondo_animado header .menu .contenedor-grid .grid .categorias a {
+          justify-content: space-between;
+          padding: 0 20px; }
+          .fondo_animado header .menu .contenedor-grid .grid .categorias a i {
+            display: none; }
+        .fondo_animado header .menu .contenedor-grid .grid .categorias a:hover {
+          color: #6EFFE2;
+          font-weight: bold; }
+        .fondo_animado header .menu .contenedor-grid .grid .categorias a:hover i {
+          display: inline-block; }
+      .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias {
+        grid-area: sub; }
+        .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias {
+          display: none;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          height: 100%;
+          max-height: 600px; }
+          .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias img {
+            width: 100%;
+            vertical-align: top;
+            height: 100% !important;
+            object-fit: cover; }
+          .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .sub-categorias-enlaces {
+            padding-top: 10px;
+            height: 100% !important;
+            overflow: auto; }
+            .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .sub-categorias-enlaces a {
+              padding: 0 20px; }
+            .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .sub-categorias-enlaces a:hover {
+              color: #6EFFE2; }
+            .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .sub-categorias-enlaces .subtitulo {
+              margin: 0;
+              text-align: center; }
+          .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .categorias-galeria {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: 100%; }
+            .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .categorias-galeria a {
+              width: 50%;
+              height: 50%; }
+          .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .categorias-baner {
+            max-height: 600px; }
+            .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias .categorias-baner a {
+              display: block;
+              height: 100%; }
+        .fondo_animado header .menu .contenedor-grid .grid .contenedor-sub-categorias .sub-categorias.activo {
+          display: grid; }
+    .fondo_animado header .menu .contenedor-grid .grid > div {
+      box-shadow: 0px 3px 6px black; }
+    .fondo_animado header .menu .contenedor-grid .grid::before {
+      content: "";
+      display: block;
+      background: transparent;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #164964;
+      position: absolute;
+      top: -5px;
+      left: 50px; }
+    .fondo_animado header .menu .contenedor-grid .grid.activo {
+      display: grid; }
+
+.fondo_animado .contenido > .container {
+  min-height: 500px;
+  max-width: inherit;
+  width: 100%; }
+  .fondo_animado .contenido > .container h1 {
+    font-size: 7.2rem;
+    font-weight: bold;
+    color: rgba(97, 206, 240, 0.9);
+    margin: 0;
+    padding: 0; }
+  .fondo_animado .contenido > .container .titulo {
+    color: white; }
+  .fondo_animado .contenido > .container .carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px; }
+    .fondo_animado .contenido > .container .carousel .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .fondo_animado .contenido > .container .carousel .carousel-item .detalle {
+      color: white;
+      background-color: black;
+      margin: 0 50px;
+      padding: 10px; }
+    .fondo_animado .contenido > .container .carousel .carousel-item h2 {
+      font-weight: bold;
+      text-shadow: 1 1 1;
+      text-align: center; }
+
+.fondo_animado .carrusel2 > .container {
+  max-width: inherit;
+  width: 100%; }
+  .fondo_animado .carrusel2 > .container .carousel {
+    height: 480px; }
+  .fondo_animado .carrusel2 > .container h1 {
+    font-size: 7.2rem;
+    font-weight: bold;
+    color: rgba(97, 206, 240, 0.9);
+    margin: 0;
+    padding: 0; }
+  .fondo_animado .carrusel2 > .container .titulo {
+    color: white; }
+  .fondo_animado .carrusel2 > .container .carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 350px;
+    height: 480px; }
+    .fondo_animado .carrusel2 > .container .carousel .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .fondo_animado .carrusel2 > .container .carousel .carousel-item .detalle {
+      color: white;
+      background-color: black;
+      margin: 0 50px;
+      padding: 10px; }
+    .fondo_animado .carrusel2 > .container .carousel .carousel-item h2 {
+      font-weight: bold;
+      text-shadow: 1 1 1;
+      text-align: center; }
+
+.fondo_animado .contactos {
+  background-color: #1a1a1a;
+  color: aliceblue;
+  margin: 50px; }
+  .fondo_animado .contactos table td {
+    width: 33%;
+    padding: 0 20px; }
+
+.fondo_animado li {
+  margin-right: 10px; }
+
+@keyframes degrado {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 50% 0; } }
+
+#categorias::-webkit-scrollbar,
+#sub-categorias-enlaces::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px; }
+
+/* Estilos barra (thumb) de scroll */
+#categorias::-webkit-scrollbar-thumb,
+#sub-categorias-enlaces::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #173552;
+  border-radius: 4px; }
+
+#categorias::-webkit-scrollbar-thumb:hover,
+#sub-categorias-enlaces::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #0c1c2b;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+/* Estilos track de scroll */
+#categorias::-webkit-scrollbar-track,
+#sub-categorias-enlaces::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px; }
+
+body::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #164964; }

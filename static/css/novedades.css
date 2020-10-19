@@ -1,0 +1,16 @@
+.novedades > div {
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .novedades > div .detalle {
+    padding: 10px;
+    max-width: 500px; }
+  .novedades > div img {
+    margin: 10px; }
+  .novedades > div #modal {
+    position: fixed;
+    z-index: 1000000;
+    top: -120vh;
+    left: 50%; }
