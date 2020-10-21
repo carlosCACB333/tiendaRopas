@@ -45,6 +45,9 @@ body {
         background-color: #550028;
         color: white;
     }
+    .uno {
+        background: linear-gradient(100deg, rgba(31, 174, 176, 1) 0%, rgba(55, 96, 119, 1) 50%, rgba(34, 193, 195, 1) 100%);
+    }
     .boton:hover {
         background: #6A6A6A;
         cursor: pointer;
@@ -72,6 +75,7 @@ body {
             height: 80px;
             margin-bottom: 20px;
             input[type=text] {
+                height: 38px;
                 margin: 20px;
                 background-image: url('../img/iconos/lupa.png');
                 background-repeat: no-repeat;
@@ -237,7 +241,9 @@ body {
                 display: block;
             }
             table {
-                background-color: #D5DBDB;
+                -webkit-box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
+                box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
                 margin-top: 10px;
                 border-collapse: separate;
                 td {
@@ -366,7 +372,7 @@ body {
 
 //---------------PERSONALIZAMOS EL SCROLL HORRIBLE-------------------------
 #categorias::-webkit-scrollbar,
-#sub-categorias-enlaces::-webkit-scrollbar,
+.sub-categorias-enlaces::-webkit-scrollbar,
 body::-webkit-scrollbar {
     width: 8px;
 }
@@ -375,14 +381,14 @@ body::-webkit-scrollbar {
 /* Estilos barra (thumb) de scroll */
 
 #categorias::-webkit-scrollbar-thumb,
-#sub-categorias-enlaces::-webkit-scrollbar-thumb,
+.sub-categorias-enlaces::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
     background: rgb(23, 53, 82);
     border-radius: 4px;
 }
 
 #categorias::-webkit-scrollbar-thumb:hover,
-#sub-categorias-enlaces::-webkit-scrollbar-thumb:hover,
+.sub-categorias-enlaces::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
     background: rgb(12, 28, 43);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -392,7 +398,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* Estilos track de scroll */
 
 #categorias::-webkit-scrollbar-track,
-#sub-categorias-enlaces::-webkit-scrollbar-track {
+.sub-categorias-enlaces::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 4px;
 }

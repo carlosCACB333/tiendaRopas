@@ -35,4 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
     var elemento = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elemento, {});
 
+    // select
+
+    var selecion = document.querySelectorAll('.material-select');
+    var instances = M.FormSelect.init(selecion);
+
 });

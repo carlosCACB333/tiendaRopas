@@ -40,6 +40,9 @@ body {
   background-color: #550028;
   color: white; }
 
+.fondo_animado .uno {
+  background: linear-gradient(100deg, #1faeb0 0%, #376077 50%, #22c1c3 100%); }
+
 .fondo_animado .boton:hover {
   background: #6A6A6A;
   cursor: pointer; }
@@ -62,6 +65,7 @@ body {
   height: 80px;
   margin-bottom: 20px; }
   .fondo_animado header nav input[type=text] {
+    height: 38px;
     margin: 20px;
     background-image: url("../img/iconos/lupa.png");
     background-repeat: no-repeat;
@@ -192,7 +196,9 @@ body {
   .fondo_animado header #slide-out select {
     display: block; }
   .fondo_animado header #slide-out table {
-    background-color: #D5DBDB;
+    -webkit-box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px -1px 53px -13px rgba(0, 0, 0, 0.75);
     margin-top: 10px;
     border-collapse: separate; }
     .fondo_animado header #slide-out table td {
@@ -295,26 +301,26 @@ body {
     background-position: 50% 0; } }
 
 #categorias::-webkit-scrollbar,
-#sub-categorias-enlaces::-webkit-scrollbar,
+.sub-categorias-enlaces::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 8px; }
 
 /* Estilos barra (thumb) de scroll */
 #categorias::-webkit-scrollbar-thumb,
-#sub-categorias-enlaces::-webkit-scrollbar-thumb,
+.sub-categorias-enlaces::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
   background: #173552;
   border-radius: 4px; }
 
 #categorias::-webkit-scrollbar-thumb:hover,
-#sub-categorias-enlaces::-webkit-scrollbar-thumb:hover,
+.sub-categorias-enlaces::-webkit-scrollbar-thumb:hover,
 body::-webkit-scrollbar-thumb:hover {
   background: #0c1c2b;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
 
 /* Estilos track de scroll */
 #categorias::-webkit-scrollbar-track,
-#sub-categorias-enlaces::-webkit-scrollbar-track {
+.sub-categorias-enlaces::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 4px; }
 
