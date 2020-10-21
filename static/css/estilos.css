@@ -68,7 +68,7 @@ body {
     background-position: right;
     background-size: 30px;
     border: 1px solid #6EFFE2;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     padding: 0 20px; }
   .fondo_animado header nav .btn {
@@ -185,6 +185,18 @@ body {
       left: 50px; }
     .fondo_animado header .menu .contenedor-grid .grid.activo {
       display: grid; }
+
+.fondo_animado header #slide-out {
+  font-family: "Helvetica-Light" !important;
+  padding: 30px; }
+  .fondo_animado header #slide-out select {
+    display: block; }
+  .fondo_animado header #slide-out table {
+    background-color: #D5DBDB;
+    margin-top: 10px;
+    border-collapse: separate; }
+    .fondo_animado header #slide-out table td {
+      padding: 0; }
 
 .fondo_animado .contenido > .container {
   min-height: 500px;

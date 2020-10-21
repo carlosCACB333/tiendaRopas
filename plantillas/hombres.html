@@ -35,7 +35,7 @@
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
-                    <li><a class="waves-effect waves-light btn">¡Regístrate!</a></li>
+                    <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
 
 
 
@@ -44,17 +44,188 @@
                 <div class="contenedor-formulario">
                     <div class="formulario" id="formulario">
 
+                        <form action="" class="formulario-login ">
 
+                            <div class="form">
+                                <h1>Iniciar Sesión</h1>
+                                <div class="redes face">
+                                    <a href="#">Iniciar sesión con Facebook</a>
+                                </div>
+                                <div class="redes tw">
+                                    <a href="#">    Iniciar sesión con Twitter</a>
+                                </div>
+
+                                <div class="division">
+                                    <p>o</p>
+                                </div>
+
+                                <div class="grupo">
+                                    <input type="email" class="caja" id="email" name='email' required>
+                                    <label for="">Correo Electrónico:</label>
+                                </div>
+
+                                <div class="grupo">
+                                    <input type="password" class="caja" id="contraseña" name="clave" required>
+                                    <label for="">Contraseña:</label>
+                                </div>
+
+                                <button type="submit" class="primero">Iniciar sesión</button>
+
+                                <div class="recuperar ">
+                                    <a href="# "> ¿Olvisdate tu contraseña?</a>
+                                </div>
+
+                                <button type="button " class="segundo " OnClick=""> Registrarse</button>
+
+
+                            </div>
+                        </form>
 
                     </div>
                 </div>
-                <li class=" btn"><img src="../static/img/iconos/carrito.png" height="40px"></li>
-
-
-
-
+                <li class=" btn" id="carrito"><img src="../static/img/iconos/carrito.png" height="40px"></li>
 
             </nav>
+
+            <ul id="slide-out" class="sidenav contenedor-carrito">
+                <h3 style="color: rgb(0, 60, 139);">Carrito</h3>
+
+
+
+
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/6.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> polo rojo manga larga </b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/4.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> Blusa Manga Corta </b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/2.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> Blusa Manga Corta 28072</b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+
+
+
+
+                <div style="width: 100%;" class="boton tres">
+                    <p>
+                        pagar ahora s/700.00
+                    </p>
+                </div>
+                <br><br><br>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="btn_carrito"> </i></a>
+
             <nav class="menu" id="menu">
 
                 <div class="contenedor-grid" id="contenedor-grid">
@@ -63,26 +234,25 @@
                     </h4>
                     <div class="grid" id="grid">
                         <div class="categorias" id="categorias">
-                            <a href="#" data-categoria="moda-mujer"> Moda Mujer<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="moda-hombre"> Moda Hombres<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
-                            <a href="#" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png"  height="10px" alt=""></i> </a>
-                            <a href="#" data-categoria="hecho-peru"> Hecho En Perú<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="internacionales"> Marcas Internacionales<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="accesorios"> Accesosorio<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="damas.html" data-categoria="moda-mujer"> Moda Mujer<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="hombres.html" data-categoria="moda-hombre"> Moda Hombres<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
+                            <a href="dniños.html" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png"  height="10px" alt=""></i> </a>
+                            <a href="peruanas.html" data-categoria="hecho-peru"> Hecho En Perú<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="internacionales.html" data-categoria="internacionales"> Marcas Internacionales<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="accesorios.html" data-categoria="accesorios"> Accesosorio<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
                         </div>
                         <div class="contenedor-sub-categorias">
-                            <div class="sub-categorias" data-categoria="moda-hombre">
+                            <div class="sub-categorias" data-categoria="moda-mujer">
                                 <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
-                                    <h3 class="subtitulo">Moda hombre</h3>
-
-                                    <a href="hombres.html"> De Gala</a>
-                                    <a href="hombres.html#especial"> Marcas Especiales</a>
-                                    <a href="hombres.html"> Jeans</a>
-                                    <a href="hombres.html"> Ropa Interior </a>
-                                    <a href="hombres.html"> pantalones </a>
-                                    <a href="hombres.html"> accesorios</a>
-                                    <a href="hombres.html"> Zapatos</a>
-                                    <a href="hombres.html"> zapatillas</a>
+                                    <h3 class="subtitulo">Moda Mujer</h3>
+                                    <a href="damas.html#gala"> De Gala</a>
+                                    <a href="damas.html#especial"> Marcas Especiales</a>
+                                    <a href="damas.html#jeans"> Jeans</a>
+                                    <a href="damas.html#lencerias"> Lencerías y Ropa Interior </a>
+                                    <a href="damas.html#vestidos"> vestidos </a>
+                                    <a href="damas.html#accesorios"> accesorios</a>
+                                    <a href="damas.html#zapatos"> Zapatos</a>
+                                    <a href="damas.html#tacones"> Tacones</a>
                                 </div>
                                 <div class="categorias-baner">
                                     <a href="#">
@@ -108,14 +278,13 @@
                             <div class="sub-categorias" data-categoria="moda-hombre">
                                 <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
                                     <h3 class="subtitulo">Moda Hombres</h3>
-                                    <a href="#"> De Gala</a>
-                                    <a href="#"> Marcas Especiales</a>
-                                    <a href="#"> Jeans</a>
-                                    <a href="#"> Ropa Interior </a>
-                                    <a href="#"> Pantalones </a>
-                                    <a href="#"> accesorios</a>
-                                    <a href="#"> Zapatos</a>
-                                    <a href="#"> Zapatillas</a>
+                                    <a href="hombres.html#gala"> De Gala</a>
+                                    <a href="hombres.html#jeans"> Jeans</a>
+                                    <a href="hombres.html#lencerias"> Ropa Interior </a>
+                                    <a href="hombres.html#pantalones"> Pantalones </a>
+                                    <a href="hombres.html#accesorios"> accesorios</a>
+                                    <a href="hombres.html#zapatos"> Zapatos</a>
+                                    <a href="hombres.html#zapatillas"> Zapatillas</a>
 
                                 </div>
                                 <div class="categorias-baner">
@@ -125,16 +294,16 @@
                                 </div>
                                 <div class="categorias-galeria">
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/2.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/3.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/5.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/9.jpg" alt="">
                                     </a>
                                 </div>
 
@@ -142,14 +311,14 @@
                             <div class="sub-categorias" data-categoria="moda-bebe">
                                 <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
                                     <h3 class="subtitulo">Niños</h3>
-                                    <a href="#"> De Gala</a>
-                                    <a href="#"> Marcas Especiales</a>
-                                    <a href="#"> Jeans</a>
-                                    <a href="#"> Ropa Interior </a>
-                                    <a href="#"> Pantalones </a>
-                                    <a href="#"> accesorios</a>
-                                    <a href="#"> Zapatos</a>
-                                    <a href="#"> Zapatillas</a>
+                                    <a href="dniños.html#gala"> De Gala</a>
+
+                                    <a href="dniños.html#camisas"> Camisas</a>
+                                    <a href="dniños.html#polos" polos> polos</a>
+                                    <a href="dniños.html#casacas"> casacas </a>
+
+                                    <a href="dniños.html#zapatos"> Zapatos</a>
+                                    <a href="dniños.html#Zapatillas">Zapatillas</a>
                                 </div>
                                 <div class="categorias-baner">
                                     <a href="#">
@@ -168,6 +337,102 @@
                                     </a>
                                     <a href="#">
                                         <img src="../static/img/niños/4.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-categorias" data-categoria="hecho-peru">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Hechos en Peru</h3>
+                                    <a href="peruanas.html"> seccion especial</a>
+
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/eb0866f08173bc20bb71f3ddff8c6ba9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/DfgAxY1W4AQjTQx.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/1710582.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/3afe6bd88d2946620e6a98e54866ffde.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/DlQd00-WwAABBav.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-categorias" data-categoria="internacionales">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Importadas</h3>
+                                    <a href="dniños.html"> De Gala</a>
+                                    <a href="#"> Marcas Especiales</a>
+                                    <a href="#"> Jeans</a>
+                                    <a href="#"> Ropa Interior </a>
+                                    <a href="#"> Pantalones </a>
+                                    <a href="#"> accesorios</a>
+                                    <a href="#"> Zapatos</a>
+                                    <a href="#"> Zapatillas</a>
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/damas/12.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/FOTO_0037.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/HTB1sNeYbCSD3KVjSZFKq6z10VXa8.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/images.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/multiwear_fireline_weldin_chaqueta.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-categorias" data-categoria="accesorios">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Importadas</h3>
+                                    <a href="dniños.html"> De Gala</a>
+                                    <a href="#"> Marcas Especiales</a>
+                                    <a href="#"> Jeans</a>
+                                    <a href="#"> Ropa Interior </a>
+                                    <a href="#"> Pantalones </a>
+                                    <a href="#"> accesorios</a>
+                                    <a href="#"> Zapatos</a>
+                                    <a href="#"> Zapatillas</a>
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/fizili-reloj-de-pulsera-para-hombre-ultra-fino-minimalista-moderno-ogtbdewpupaufhpvxz142r9vhcywdlp6ibvm0p6hs8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios//images (1).jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/HTB1LsjgaErrK1RkSne1q6ArVVXaR.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/gafas-de-sol-tendencia-jog-para-hombres-todo.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/images.jpg" alt="">
                                     </a>
                                 </div>
 
@@ -193,6 +458,7 @@
 
 
 
+
         <section class="contenido">
 
             <div class="container ">
@@ -202,22 +468,23 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
-                                <div class="linea-division "></div>
-                                <div class="detalle ">
-                                    <p>$45</p>
-                                </div>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
+                                <h2 class="subtitulo ">Conjunto CAMISA Y PANTALON
+                                    <h2>
+                                        <div class="linea-division "></div>
+                                        <div class="detalle ">
+                                            <p>$95.99</p>
+                                        </div>
+                                        <div class="boton">
+                                            <p>agregar al carrito</p>
+                                        </div>
 
-                                <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/1.jpg" alt="">
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">Bleizer</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$80</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -225,9 +492,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">Casaca jeans </h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$100</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -235,9 +502,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">Casacas</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$85</p>
+                                <p class="detalle ">$55</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -245,7 +512,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Polos</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$35</p>
                                 <div class="boton">
@@ -255,9 +522,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Sacones</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$45</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -265,9 +532,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Conjunto deportivo</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$95.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -275,7 +542,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Poleras</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$30 c/u</p>
                                 <div class="boton">
@@ -310,10 +577,10 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Terno buttery</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
-                                    <p>$45</p>
+                                    <p>$220</p>
                                 </div>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
@@ -322,9 +589,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">Terno Ermenegildo Zegna</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$220</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -332,9 +599,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">Terno Ermenegildo Zegna</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$236</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -342,9 +609,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">Ternos Etro</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$85</p>
+                                <p class="detalle ">$285</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -352,9 +619,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Terno Etro</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$235</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -362,9 +629,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Terno Hugo Boss</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$225</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -372,9 +639,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Terno Hugo Boss</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$235.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -382,128 +649,23 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Ternos Mr.Potter</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$30 c/u</p>
+                                <p class="detalle ">$250 c/u</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
                                 <img src="../static/img/imagenes carpetas/hombres/gala/mr.potter/13f2b39fe059718b4cf5cac6ec001dce.jpg" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">Ternos Puro Ego</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$34 c/u</p>
+                                <p class="detalle ">$234.99 c/u</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
 
                                 <img src="../static/img/imagenes carpetas/hombres/gala/puro ego/c18d14_de061710850043059e3e933a66346be4_mv2.jpg" alt="">
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="container " id="especial">
-                <div class="row ">
-                    <div class="col s12 ">
-                        <h2 class="center-align titulo "> zapatillas </h2>
-                        <div class="carousel center_align principal">
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
-                                <div class="linea-division "></div>
-                                <div class="detalle ">
-                                    <p>$45</p>
-                                </div>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/2-pares-de-zapatillas-de-deporte-para-hombre-zapatos-ant-D_NQ_NP_787059-MPE43645152108_102020-F.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/3b9c8a28b785ee12fc9223c4904aecb1.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/9d3b8978182f6a1b706affc20854dd8c.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$85</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/adidas-superstar-wish-list-1596639170.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/pares-de-zapatos-deportivos-azules-para-el-hombre-91106256.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/seleccionzapatillas-1552656209190.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/ffd0a1fd2d27c714257d5796716cd047.jpg" alt="">
-                            </div>
-
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$30 c/u</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/carre2_14.jpg" alt="">
-                            </div>
-                            <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
-                                <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
-                                <div class="boton">
-                                    <p>agregar al carrito</p>
-                                </div>
-                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/adidas-superstar-wish-list-1596639170.jpg" alt="">
                             </div>
 
 
@@ -521,7 +683,7 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Mezclilla elasticos</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
                                     <p>$45</p>
@@ -533,9 +695,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">Jeans rasgados</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$60</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -543,9 +705,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">Skinny jeans </h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$56</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -553,7 +715,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">Casuales</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$85</p>
                                 <div class="boton">
@@ -563,7 +725,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Para vestir</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$35</p>
                                 <div class="boton">
@@ -573,9 +735,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Clasico</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$45</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -583,32 +745,32 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Jeans Slim</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$75</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
-                                <img src="../static/img/imagenes carpetas/mujeres/jeans/H840451f31a9b4b32b85ac8d1f7b9ef34g.jpg_350x350.jpg" alt="">
+                                <img src="../static/img/imagenes carpetas/hombres/jeans/jjj.jpg" alt="">
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Sexy Casual</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$30 c/u</p>
+                                <p class="detalle ">$52.99 c/u</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
-                                <img src="../static/img/imagenes carpetas/mujeres/jeans/HTB12TMOafvsK1RjSspdq6AZepXae.jpg_350x350.jpg" alt="">
+                                <img src="../static/img/imagenes carpetas/hombres/jeans/VICABO-jeans-de-moda-para-hombres-2020-Sexy-Casual-jeans-para-hombres-Negro-Azul-agujero-Jeans.jpg_q50.jpg" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">Suave elastico Snniki</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
+                                <p class="detalle ">$42.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
-                                <img src="../static/img/imagenes carpetas/mujeres/jeans/images (1).jpg" alt="">
+                                <img src="../static/img/imagenes carpetas/hombres/jeans/Nueva-moda-suave-el-stico-Skinny-Jeans-hombre-l-piz-pantalones-rasgados-hombres-Jeans.webp" alt="">
                             </div>
 
 
@@ -626,10 +788,10 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Tommy Jhon</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
-                                    <p>$45</p>
+                                    <p>$15</p>
                                 </div>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
@@ -638,9 +800,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">Uomo</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$10</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -648,9 +810,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">Boxers </h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$10</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -658,9 +820,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">Superbody</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$85</p>
+                                <p class="detalle ">$20</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -668,9 +830,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Tommy Milteger</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$15</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -678,9 +840,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Calvin Klein</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$12</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -688,9 +850,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Eac Eck</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$8.50</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -698,18 +860,18 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Calzoncillos Calvin Klein</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$30 c/u</p>
+                                <p class="detalle ">$9.99 c/u</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
                                 <img src="../static/img/imagenes carpetas/hombres/ropa intima/images.jpg" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">yamamay</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
+                                <p class="detalle ">$12.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -724,14 +886,14 @@
 
             </div>
 
-            <div class="container " id="vestidos">
+            <div class="container " id="pantalones">
                 <div class="row ">
                     <div class="col s12 ">
                         <h2 class="center-align titulo "> pantalones </h2>
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Chandal camuflaje</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
                                     <p>$45</p>
@@ -743,9 +905,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">JOBOX Slim</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$50</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -753,9 +915,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">Tommy Hilfiger </h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$67.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -763,7 +925,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">MatchStick</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$85</p>
                                 <div class="boton">
@@ -773,9 +935,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Venture</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$32.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -783,9 +945,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Selected Homme</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$40.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -793,9 +955,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Rosillas Kaki</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$32.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -803,7 +965,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Bolsillos laterales</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$30 c/u</p>
                                 <div class="boton">
@@ -812,9 +974,9 @@
                                 <img src="../static/img/imagenes carpetas/hombres/pantalones/tiposdepantalonesparahombre.madmenmagazine2.jpg" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">deportivos</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
+                                <p class="detalle ">$54.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -836,7 +998,7 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Reloj de pulsera</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
                                     <p>$45</p>
@@ -848,9 +1010,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">reloj de vestir color marron</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$55</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -858,9 +1020,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fucsia </h2>
+                                <h2 class="subtitulo ">gafas Amankei</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$36</p>
+                                <p class="detalle ">$45</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -868,9 +1030,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo ">reloj de cuero</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$85</p>
+                                <p class="detalle ">$50</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -878,7 +1040,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">lentes de sol</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$35</p>
                                 <div class="boton">
@@ -888,9 +1050,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Reloj hombre de maya</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$22.50</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -898,7 +1060,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Reloj cuadrado</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$35</p>
                                 <div class="boton">
@@ -908,7 +1070,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Reloj de pulsera</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$30 c/u</p>
                                 <div class="boton">
@@ -917,9 +1079,9 @@
                                 <img src="../static/img/imagenes carpetas/hombres/accesorios/images.jpg" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">gafas</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
+                                <p class="detalle ">$21</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -941,10 +1103,10 @@
                         <div class="carousel center_align principal">
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa fest</h2>
+                                <h2 class="subtitulo ">Dauss</h2>
                                 <div class="linea-division "></div>
                                 <div class="detalle ">
-                                    <p>$45</p>
+                                    <p>$78.99</p>
                                 </div>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
@@ -953,9 +1115,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Polos</h2>
+                                <h2 class="subtitulo ">Zapatos Bata</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$20</p>
+                                <p class="detalle ">$53.99</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -973,7 +1135,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">blusa floreado</h2>
+                                <h2 class="subtitulo "> Zapatos de Cuero</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$85</p>
                                 <div class="boton">
@@ -983,7 +1145,7 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Blusa balnca</h2>
+                                <h2 class="subtitulo ">Tela Casual</h2>
                                 <div class="linea-division "></div>
                                 <p class="detalle ">$35</p>
                                 <div class="boton">
@@ -993,9 +1155,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Vividi</h2>
+                                <h2 class="subtitulo ">Zapatos moztasa</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$25</p>
+                                <p class="detalle ">$45</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -1003,9 +1165,9 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Fala floreada</h2>
+                                <h2 class="subtitulo ">Toursh black</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$35</p>
+                                <p class="detalle ">$55</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -1013,18 +1175,18 @@
                             </div>
 
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Snickers</h2>
+                                <h2 class="subtitulo ">Oxford clásicas</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$30 c/u</p>
+                                <p class="detalle ">$45.90 c/u</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
                                 <img src="../static/img/imagenes carpetas/hombres/zapatos/2019-zapatos-de-marca-para-hombre-zapatos-formales-de-cuero-de-ante-Oxford-zapatillas-cl-sicas.jpg_960x960.webp" alt="">
                             </div>
                             <div class="carousel-item ">
-                                <h2 class="subtitulo ">Pack</h2>
+                                <h2 class="subtitulo ">Urbanos</h2>
                                 <div class="linea-division "></div>
-                                <p class="detalle ">$120</p>
+                                <p class="detalle ">$42.90</p>
                                 <div class="boton">
                                     <p>agregar al carrito</p>
                                 </div>
@@ -1037,8 +1199,110 @@
                 </div>
 
             </div>
+            <div class="container " id="zapatillas">
+                <div class="row ">
+                    <div class="col s12 ">
+                        <h2 class="center-align titulo "> zapatillas </h2>
+                        <div class="carousel center_align principal">
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Running Runfalcon</h2>
+                                <div class="linea-division "></div>
+                                <div class="detalle ">
+                                    <p>$85</p>
+                                </div>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/2-pares-de-zapatillas-de-deporte-para-hombre-zapatos-ant-D_NQ_NP_787059-MPE43645152108_102020-F.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">De vestir</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$20</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/3b9c8a28b785ee12fc9223c4904aecb1.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Deportivas </h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$36</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/9d3b8978182f6a1b706affc20854dd8c.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Adidas Urbanas</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$185</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/adidas-superstar-wish-list-1596639170.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Neodeporte Azul</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$55</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/pares-de-zapatos-deportivos-azules-para-el-hombre-91106256.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Casuales</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$35.99</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/seleccionzapatillas-1552656209190.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Nike Runner</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$125</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/ffd0a1fd2d27c714257d5796716cd047.jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Zapatillas de tela</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$30 c/u</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/carre2_14.jpg" alt="">
+                            </div>
+                            <div class="carousel-item ">
+                                <h2 class="subtitulo ">Adidas Seeley</h2>
+                                <div class="linea-division "></div>
+                                <p class="detalle ">$220</p>
+                                <div class="boton">
+                                    <p>agregar al carrito</p>
+                                </div>
+                                <img src="../static/img/imagenes carpetas/hombres/zapatillas/1-1-1.jpg" alt="">
+                            </div>
 
 
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </section>
 
 

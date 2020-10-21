@@ -78,7 +78,7 @@ body {
                 background-position: right;
                 background-size: 30px;
                 border: 1px solid #6EFFE2;
-                border-radius: 15px;
+                border-radius: 5px;
                 color: white;
                 padding: 0 20px;
             }
@@ -227,6 +227,21 @@ body {
                 }
                 .grid.activo {
                     display: grid;
+                }
+            }
+        }
+        #slide-out {
+            font-family: "Helvetica-Light" !important;
+            padding: 30px;
+            select {
+                display: block;
+            }
+            table {
+                background-color: #D5DBDB;
+                margin-top: 10px;
+                border-collapse: separate;
+                td {
+                    padding: 0;
                 }
             }
         }

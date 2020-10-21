@@ -35,7 +35,7 @@
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
-                    <li><a class="waves-effect waves-light btn">¡Regístrate!</a></li>
+                    <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
 
 
 
@@ -44,27 +44,187 @@
                 <div class="contenedor-formulario">
                     <div class="formulario" id="formulario">
 
+                        <form action="" class="formulario-login ">
 
+                            <div class="form">
+                                <h1>Iniciar Sesión</h1>
+                                <div class="redes face">
+                                    <a href="#">Iniciar sesión con Facebook</a>
+                                </div>
+                                <div class="redes tw">
+                                    <a href="#">    Iniciar sesión con Twitter</a>
+                                </div>
+
+                                <div class="division">
+                                    <p>o</p>
+                                </div>
+
+                                <div class="grupo">
+                                    <input type="email" class="caja" id="email" name='email' required>
+                                    <label for="">Correo Electrónico:</label>
+                                </div>
+
+                                <div class="grupo">
+                                    <input type="password" class="caja" id="contraseña" name="clave" required>
+                                    <label for="">Contraseña:</label>
+                                </div>
+
+                                <button type="submit" class="primero">Iniciar sesión</button>
+
+                                <div class="recuperar ">
+                                    <a href="# "> ¿Olvisdate tu contraseña?</a>
+                                </div>
+
+                                <button type="button " class="segundo " OnClick=""> Registrarse</button>
+
+
+                            </div>
+                        </form>
 
                     </div>
                 </div>
-
                 <li class=" btn" id="carrito"><img src="../static/img/iconos/carrito.png" height="40px"></li>
 
-
-
             </nav>
-            <ul id="slide-out" class="sidenav contenedor-carrito">
-                <h2>tus articulos</h2>
-                <div><img src="../static/img/caballeros/5.jpg" width="100px" alt="">
-                    <h5>precio=500</h5>
-                </div>
 
+            <ul id="slide-out" class="sidenav contenedor-carrito">
+                <h3 style="color: rgb(0, 60, 139);">Carrito</h3>
+
+
+
+
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/6.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> polo rojo manga larga </b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/4.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> Blusa Manga Corta </b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td rowspan="4">
+                            <img src="../static/img/niños/2.jpg" width="120px" alt="">
+                        </td>
+                        <td>
+                            <b> Blusa Manga Corta 28072</b>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>cantidad :
+                            <input type="number" value="1" style="width: 30px; margin-left: 10px;margin-left: 20px;">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            talla:
+                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                                <option value="0">S</option>
+                                <option value="1">M</option>
+                                <option value="1">L</option>
+                                <option value="2">XL</option>
+                                <option value="2">XXL</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>S/ 62.93
+                        </td>
+
+                    </tr>
+
+                </table>
+
+
+
+
+                <div style="width: 100%;" class="boton tres">
+                    <p>
+                        pagar ahora s/700.00
+                    </p>
+                </div>
+                <br><br><br>
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="btn_carrito"> </i></a>
-
-
-
 
             <nav class="menu" id="menu">
 
@@ -74,12 +234,12 @@
                     </h4>
                     <div class="grid" id="grid">
                         <div class="categorias" id="categorias">
-                            <a href="#" data-categoria="moda-mujer"> Moda Mujer<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="moda-hombre"> Moda Hombres<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
-                            <a href="#" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png"  height="10px" alt=""></i> </a>
-                            <a href="#" data-categoria="hecho-peru"> Hecho En Perú<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="internacionales"> Marcas Internacionales<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
-                            <a href="#" data-categoria="accesorios"> Accesosorio<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="damas.html" data-categoria="moda-mujer"> Moda Mujer<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="hombres.html" data-categoria="moda-hombre"> Moda Hombres<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
+                            <a href="dniños.html" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png"  height="10px" alt=""></i> </a>
+                            <a href="peruanas.html" data-categoria="hecho-peru"> Hecho En Perú<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="internacionales.html" data-categoria="internacionales"> Marcas Internacionales<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
+                            <a href="accesorios.html" data-categoria="accesorios"> Accesosorio<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
                         </div>
                         <div class="contenedor-sub-categorias">
                             <div class="sub-categorias" data-categoria="moda-mujer">
@@ -93,7 +253,6 @@
                                     <a href="damas.html#accesorios"> accesorios</a>
                                     <a href="damas.html#zapatos"> Zapatos</a>
                                     <a href="damas.html#tacones"> Tacones</a>
-
                                 </div>
                                 <div class="categorias-baner">
                                     <a href="#">
@@ -119,18 +278,14 @@
                             <div class="sub-categorias" data-categoria="moda-hombre">
                                 <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
                                     <h3 class="subtitulo">Moda Hombres</h3>
-                                    <a href="#"> De Gala</a>
-                                    <a href="#"> Marcas Especiales</a>
-                                    <a href="#"> Jeans</a>
-                                    <a href="#"> Ropa Interior </a>
-                                    <a href="#"> Pantalones </a>
-                                    <a href="#"> accesorios</a>
-                                    <a href="#"> Zapatos</a>
-                                    <a href="#"> Zapatillas</a>
-                                    <a href="#"> Zapatillas</a>
-                                    <a href="#"> Zapatillas</a>
-                                    <a href="#"> Zapatillas</a>
-                                    <a href="#"> Zapatillas</a>
+                                    <a href="hombres.html#gala"> De Gala</a>
+                                    <a href="hombres.html#jeans"> Jeans</a>
+                                    <a href="hombres.html#lencerias"> Ropa Interior </a>
+                                    <a href="hombres.html#pantalones"> Pantalones </a>
+                                    <a href="hombres.html#accesorios"> accesorios</a>
+                                    <a href="hombres.html#zapatos"> Zapatos</a>
+                                    <a href="hombres.html#zapatillas"> Zapatillas</a>
+
                                 </div>
                                 <div class="categorias-baner">
                                     <a href="#">
@@ -139,16 +294,16 @@
                                 </div>
                                 <div class="categorias-galeria">
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/2.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/3.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/5.jpg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img src="../static/img/caballeros/1.jpg" alt="">
+                                        <img src="../static/img/caballeros/9.jpg" alt="">
                                     </a>
                                 </div>
 
@@ -156,14 +311,14 @@
                             <div class="sub-categorias" data-categoria="moda-bebe">
                                 <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
                                     <h3 class="subtitulo">Niños</h3>
-                                    <a href="#"> De Gala</a>
-                                    <a href="#"> Marcas Especiales</a>
-                                    <a href="#"> Jeans</a>
-                                    <a href="#"> Ropa Interior </a>
-                                    <a href="#"> Pantalones </a>
-                                    <a href="#"> accesorios</a>
-                                    <a href="#"> Zapatos</a>
-                                    <a href="#"> Zapatillas</a>
+                                    <a href="dniños.html#gala"> De Gala</a>
+
+                                    <a href="dniños.html#camisas"> Camisas</a>
+                                    <a href="dniños.html#polos" polos> polos</a>
+                                    <a href="dniños.html#casacas"> casacas </a>
+
+                                    <a href="dniños.html#zapatos"> Zapatos</a>
+                                    <a href="dniños.html#Zapatillas">Zapatillas</a>
                                 </div>
                                 <div class="categorias-baner">
                                     <a href="#">
@@ -186,13 +341,109 @@
                                 </div>
 
                             </div>
+
+                            <div class="sub-categorias" data-categoria="hecho-peru">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Hechos en Peru</h3>
+                                    <a href="peruanas.html"> seccion especial</a>
+
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/eb0866f08173bc20bb71f3ddff8c6ba9.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/DfgAxY1W4AQjTQx.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/1710582.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/3afe6bd88d2946620e6a98e54866ffde.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hechos en peru/DlQd00-WwAABBav.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-categorias" data-categoria="internacionales">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Importadas</h3>
+                                    <a href="dniños.html"> De Gala</a>
+                                    <a href="#"> Marcas Especiales</a>
+                                    <a href="#"> Jeans</a>
+                                    <a href="#"> Ropa Interior </a>
+                                    <a href="#"> Pantalones </a>
+                                    <a href="#"> accesorios</a>
+                                    <a href="#"> Zapatos</a>
+                                    <a href="#"> Zapatillas</a>
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/damas/12.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/FOTO_0037.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/HTB1sNeYbCSD3KVjSZFKq6z10VXa8.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/images.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/internacionales/multiwear_fireline_weldin_chaqueta.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-categorias" data-categoria="accesorios">
+                                <div class="sub-categorias-enlaces" id="sub-categorias-enlaces">
+                                    <h3 class="subtitulo">Importadas</h3>
+                                    <a href="dniños.html"> De Gala</a>
+                                    <a href="#"> Marcas Especiales</a>
+                                    <a href="#"> Jeans</a>
+                                    <a href="#"> Ropa Interior </a>
+                                    <a href="#"> Pantalones </a>
+                                    <a href="#"> accesorios</a>
+                                    <a href="#"> Zapatos</a>
+                                    <a href="#"> Zapatillas</a>
+                                </div>
+                                <div class="categorias-baner">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/fizili-reloj-de-pulsera-para-hombre-ultra-fino-minimalista-moderno-ogtbdewpupaufhpvxz142r9vhcywdlp6ibvm0p6hs8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="categorias-galeria">
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios//images (1).jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/HTB1LsjgaErrK1RkSne1q6ArVVXaR.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/gafas-de-sol-tendencia-jog-para-hombres-todo.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../static/img/imagenes carpetas/hombres/accesorios/images.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
                 <ul>
-                    <li class="active"><a href="#">novedades</a></li>
+                    <li class="active"><a href="novedades.html">novedades</a></li>
                     <li><a href="vistas/damas.html">ofertas</a></li>
                     <li><a href="vistas/damas.html">más vendidos</a></li>
                     <li><a href="vistas/damas.html">más buscados</a></li>
@@ -207,13 +458,14 @@
 
 
 
+
         <section class="contenido">
 
             <div class="novedades">
                 <div>
                     <img src="../static/img/damas/10.jpg" alt="">
                     <div class="detalle">
-                        <h1>LOOK DE LA SEMANA</h1>
+                        <h1>LOOK DE LA SEMANA-DAMAS</h1>
                         <p>Mix & Match. Combina lo sofisticado de nuestro saco de Suede Scuba (27070) con una cafarena (27128) y unas leggings del mismo tono (27137) para crear un contraste de encanto. Se convertirá en tu favorito de la temporada. #ColecciónOI20</p>
                         <div class="boton tres">
                             <p> comprar ahora</p>
@@ -223,7 +475,7 @@
 
                 <div>
                     <div class="detalle">
-                        <h1>LOOK DE LA SEMANA</h1>
+                        <h1>LOOK DE LA SEMANA-CABALLEROS</h1>
                         <p>Mix & Match. Combina lo sofisticado de nuestro saco de Suede Scuba (27070) con una cafarena (27128) y unas leggings del mismo tono (27137) para crear un contraste de encanto. Se convertirá en tu favorito de la temporada. #ColecciónOI20</p>
                         <div class="boton tres">
                             <p> comprar ahora</p>
@@ -235,7 +487,7 @@
                 <div>
                     <img src="../static/img/niños/7.jpg" alt="">
                     <div class="detalle">
-                        <h1>LOOK DE LA SEMANA</h1>
+                        <h1>LOOK DE LA NIÑOS</h1>
                         <p>Mix & Match. Combina lo sofisticado de nuestro saco de Suede Scuba (27070) con una cafarena (27128) y unas leggings del mismo tono (27137) para crear un contraste de encanto. Se convertirá en tu favorito de la temporada. #ColecciónOI20</p>
                         <div class="boton tres">
                             <p> comprar ahora</p>
