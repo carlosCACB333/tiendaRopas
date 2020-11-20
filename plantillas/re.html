@@ -12,73 +12,58 @@
     <link rel="stylesheet" href="../static/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../static/woSlider/engine1/style.css" />
-    <script type="text/javascript" src="../static/woSlider/engine1/jquery.js"></script>
 
-    <!--  ------------- -->
+    <link rel="stylesheet" href="../static/css/novedades.css">
 
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="../static/js/titulo.js"></script>
-    <script>
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-
-        function init() {
-            canvas = document.getElementById("canvas");
-            anim_container = document.getElementById("animation_container");
-            dom_overlay_container = document.getElementById("dom_overlay_container");
-            var comp = AdobeAn.getComposition("BE4B3D9035CC0047BF7CB3952285B029");
-            var lib = comp.getLibrary();
-            handleComplete({}, comp);
+    <style>
+        .contenido {
+            width: 50%;
+            margin: auto;
         }
-
-        function handleComplete(evt, comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
-            exportRoot = new lib.titulo();
-            stage = new lib.Stage(canvas);
-            //Registers the "tick" event listener.
-            fnStartAnimation = function() {
-                    stage.addChild(exportRoot);
-                    createjs.Ticker.framerate = lib.properties.fps;
-                    createjs.Ticker.addEventListener("tick", stage);
-                }
-                //Code to support hidpi screens and responsive scaling.
-            AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
+        
+        .form-re {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.514);
+            margin-top: 50px;
+            padding: 80px;
+            border-radius: 5px;
         }
-    </script>
+        
+        .form-re textarea {
+            color: white;
+        }
+        
+        .form-re input {
+            color: white;
+        }
+    </style>
 </head>
 
-<body onload="init();">
+
+
+<body>
     <div class="fondo_animado">
         <header>
             <nav id="nav">
 
                 <a href="home.html">
-                    <!--    <h4>ropasCLS</h4> -->
-
-                    <div id="animation_container" style="background-color:rgba(143, 237, 232, 0.00); width:397px; height:71px">
-                        <canvas id="canvas" width="397" height="71" style="position: absolute; display: block; background-color:rgba(143, 237, 232, 0.00);"></canvas>
-                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:397px; height:71px; position: absolute; left: 0px; top: 0px; display: block;">
-                        </div>
-                    </div>
-
-
+                    <h4>ropasCLS</h4>
                 </a>
                 <input type="text" placeholder="buscar...">
 
                 <ul>
                     <li><a href="#">tiendas</a></li>
-                    <li><a href="Reclamos.html">reclamos</a></li>
-                    <li><a href="Servicios.html">servicio</a></li>
+                    <li><a href="Reclamos.html" class="active">reclamos</a></li>
+                    <li><a href="#">servicio</a></li>
                     <li><a href="Nosotros.html">nosotros</a></li>
 
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
                     <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
+
+
+
 
                 </ul>
                 <div class="contenedor-formulario">
@@ -123,7 +108,7 @@
 
                     </div>
                 </div>
-                <li class="btn" id="carrito"><img alt="" src="../static/img/iconos/carrito.png" height="40px"></li>
+                <li class=" btn" id="carrito"><img alt="" src="../static/img/iconos/carrito.png" height="40px"></li>
 
             </nav>
 
@@ -481,9 +466,9 @@
 
                 <ul>
                     <li class=""><a href="novedades.html">novedades</a></li>
-                    <li><a href="ofertas.html">ofertas</a></li>
-                    <li><a href="masVendidos.html">más vendidos</a></li>
-                    <li><a href="vistas/damas.html">más buscados</a></li>
+                    <li class=""><a href="ofertas.html">ofertas</a></li>
+                    <li class=""><a href="masVendidos.html">más vendidos</a></li>
+                    <li class=""><a href="damas.html">más buscados</a></li>
 
 
                 </ul>
@@ -495,26 +480,60 @@
 
 
 
-        <section class="contenido">
 
-            <div id="wowslider-container1">
-                <div class="ws_images">
-                    <ul>
-                        <li>
-                            <a href="http://wowslider.net"><img src="../static/woSlider/data1/images/7_5349.jpg" alt="carousel jquery" title="7 (5)-349" id="wows1_0" /></a>
-                        </li>
-                        <li><img src="../static/woSlider/data1/images/banner5031.jpg" alt="banner50-31" title="banner50-31" id="wows1_1" /></li>
-                    </ul>
+        <section class="contenido">
+            <form action="" class="form-re">
+
+                <h3>formulario de reclamaciones</h3>
+
+                <div>
+                    <label for=""> nombre del cliente</label>
+                    <input type="text">
                 </div>
-                <div class="ws_bullets">
-                    <div>
-                        <a href="#" title="7 (5)-349"><span><img src="../static/woSlider/data1/tooltips/banner5031.jpg" alt="7 (5)-349"/>1</span></a>
-                        <a href="#" title="banner50-31"><span><img src="../static/woSlider/data1/tooltips/7_5349.jpg" alt="banner50-31"/>2</span></a>
-                    </div>
+
+                <div>
+                    <label for="">apellido del cliente</label>
+                    <input type="text">
                 </div>
-                <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">slider</a> by WOWSlider.com v9.0</div>
-                <div class="ws_shadow"></div>
-            </div>
+
+                <div> <label for="">telefono del cliente</label></div>
+                <input type="number">
+                <div>
+                    <label for="">serie del producto</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="">nombre del producto</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="">numero de factura</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label for="">fecha de compra</label>
+                    <input type="datetime">
+
+                </div>
+
+
+                <div>
+                    <label for="">detalle del reclamo</label>
+                    <textarea name="" id="" cols="30" rows="1" style="height: 10rem;"></textarea>
+                </div>
+
+
+
+                <input type="submit" class="btn" value="enviar reclamo">
+                <input type="submit" class="btn" value="descargar en pdf">
+
+
+
+            </form>
+
 
 
         </section>
@@ -589,14 +608,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
     </script>
     <script src="../static/js/animacion.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js " integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin=" anonymous "></script>
+
 
     <script src="../static/js/login.js"></script>
-
-
-    <script type="text/javascript" src="../static/woSlider/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="../static/woSlider/engine1/script.js"></script>
     <script src="../static/js/carrusel.js"></script>
+
+
+
 </body>
 
 </html>

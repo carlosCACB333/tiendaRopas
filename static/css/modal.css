@@ -1,0 +1,129 @@
+.contenedor-modal * {
+    margin: 0;
+    font-family: Helvetica;
+    color: darkslategray;
+}
+
+.contenedor-modal li,
+.contenedor-modal label {
+    list-style: none;
+    font-size: 14px;
+}
+
+.contenedor-modal .contenedor {
+    background-color: darkblue;
+}
+
+.contenedor-modal {
+    background-color: rgba(0, 0, 0, 0.795);
+    position: fixed;
+    z-index: 3000;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    margin-left: -20px;
+}
+
+.contenedor-modal .contenido {
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 90vw;
+    margin: 10vh auto;
+    display: flex;
+    position: relative;
+}
+
+.contenedor-modal .contenido .cerrar-boton-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(141, 141, 141);
+    color: white;
+}
+
+.contenedor-modal .contenido .cerrar-boton-modal:hover {
+    background-color: rgb(43, 49, 49);
+}
+
+.contenedor-modal .contenido .galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-modal .contenido img {
+    height: 100%;
+}
+
+.contenedor-modal .contenido .galeria img {
+    height: 20vh;
+}
+
+.contenedor-modal .contenido .galeria img:hover {
+    filter: brightness(50%);
+}
+
+.contenedor-modal .contenido .detalle {
+    margin: 10px;
+}
+
+
+/* -----------radio cuadrado -------------------*/
+
+.contenedor-modal .contenido .detalle .grupo-radio li {
+    list-style: none;
+    float: left;
+    position: relative;
+    width: 33px;
+    height: 38px;
+    margin: 5px;
+}
+
+.contenedor-modal .contenido .detalle .grupo-radio input {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+.contenedor-modal .contenido .detalle .grupo-radio .radio {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, .1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-modal .contenido .detalle .grupo-radio input {
+    pointer-events: auto;
+}
+
+.contenedor-modal .contenido .detalle .grupo-radio input:checked+.radio {
+    border: 2px solid black;
+}
+
+
+/* --------------------------------------------- */
+
+.contenedor-modal .contenido .detalle .cantidad input {
+    width: 50px;
+    height: 25px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.contenedor-modal .contenido .detalle .boton-agregar button {
+    background-color: rgb(38, 47, 49);
+    color: white;
+    margin: 20px;
+    height: 45px;
+    width: 200px;
+}
+
+.contenedor-modal .contenido .detalle .boton-agregar button:hover {
+    background-color: rgb(90, 107, 110);
+}

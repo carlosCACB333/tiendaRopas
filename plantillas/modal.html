@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/   " rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor-modal">
+        <div class="contenido">
+
+            <div class="cerrar-boton-modal" id="cerrar-boton-modal" onclick="$('.contenedor-modal').remove();">
+                <span>X</span>
+            </div>
+            <div class="galeria">
+
+                <img class="modal-imagen" alt="">
+                <img class="modal-imagen" alt="">
+                <img class="modal-imagen" alt="">
+                <img class="modal-imagen" alt="">
+
+
+
+            </div>
+            <img class="modal-imagen" alt="">
+
+
+
+
+
+            <div class="detalle">
+                <h2 class="modal-titulo" style="margin: 20px 0;"></h2>
+                <div><strong class="modal-precio">S/ 199.99</strong> &nbsp;&nbsp;&nbsp;<strike>S/315.26  </strike></div>
+                <h5>en stok</h5>
+                <ul>
+                    <li>con doble cruce y botones funcionales en la solapa</li>
+                    <li>con bolsillo tipo tapa </li>
+                    <li>tiene como accesorio correa de la mismas tela</li>
+                    <li>tela paño</li>
+                </ul>
+                <div style="display: flex; align-items: center;">
+                    <label for="">TALLAS</label>
+                    <ul class="grupo-radio">
+
+                        <li><input type="radio" name='tallas' value="0">
+                            <div class="radio">S</div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="1">
+                            <div class="radio">M</div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="2">
+                            <div class="radio">L</div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="3">
+                            <div class="radio">Xl</div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="4">
+                            <div class="radio">XXL</div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <label for="">COLORES DISPONIBLES</label>
+                    <ul class="grupo-radio">
+
+                        <li><input type="radio" name='tallas' value="0">
+                            <div class="radio" style="background-color: red;"></div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="1">
+                            <div class="radio" style="background-color: orange;"></div>
+                        </li>
+
+                        <li><input type="radio" name='tallas' value="2">
+                            <div class="radio" style="background-color: darkcyan;"></div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="cantidad">
+                    <LAbel>
+                        CANTIDAD
+                    </LAbel>
+                    <input type="number" value="">
+                </div>
+
+                <div class="boton-agregar">
+                    <button> Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

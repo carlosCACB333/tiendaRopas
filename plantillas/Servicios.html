@@ -14,9 +14,45 @@
 
 
     <link rel="stylesheet" href="../static/css/novedades.css">
+
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="../static/js/avion.js"></script>
+
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp = AdobeAn.getComposition("4EB1010D995DE94A88E2228BFAEF7875");
+            var lib = comp.getLibrary();
+            createjs.MotionGuidePlugin.install();
+            handleComplete({}, comp);
+        }
+
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            exportRoot = new lib.avion();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function() {
+                    stage.addChild(exportRoot);
+                    createjs.Ticker.framerate = lib.properties.fps;
+                    createjs.Ticker.addEventListener("tick", stage);
+                }
+                //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    </script>
 </head>
 
-<body>
+<body onload="init();">
     <div class="fondo_animado">
         <header>
             <nav id="nav">
@@ -28,9 +64,9 @@
 
                 <ul>
                     <li><a href="#">tiendas</a></li>
-                    <li><a href="vistas/damas.html">reclamos</a></li>
-                    <li><a href="vistas/varones.html">servicio</a></li>
-                    <li><a href="vistas/nosotros.html">nosotros</a></li>
+                    <li><a href="Reclamos.html">reclamos</a></li>
+                    <li><a href="Servicios.html">servicio</a></li>
+                    <li><a href="Nosotros.html">nosotros</a></li>
 
                 </ul>
 
@@ -460,7 +496,7 @@
 
             <div class="novedades">
                 <div>
-                    <img src="../static/img/servicios/tienda-ropa-publicidad.jpg" width="500px" alt="">
+                    <img src="../static/img/servicios/envio-a-domicilio.jpg" width="500px" alt="">
                     <div class="detalle">
                         <h1>Personal Guia</h1>
                         <p>Quieres saber acerca del precio o la marca de la ropa que elegiste comprar no te preocupes contamos con guias que te indican acerca del producto</p>
@@ -494,7 +530,11 @@
                             gusta, procede a la compra de tus productos. 3.- Llena tus datos: nombre, dirección de entrega, número de teléfono y correo electrónico </p>
 
                     </div>
-                    <img src="../static/img/servicios/envio-a-domicilio.jpg" width="500px" alt="">
+                    <div id="animation_container" style="background-color:rgba(102, 153, 255, 1.00); width:603px; height:339px">
+                        <canvas id="canvas" width="603" height="339" style="position: absolute; display: block; background-color:rgba(102, 153, 255, 1.00);"></canvas>
+                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:603px; height:339px; position: absolute; left: 0px; top: 0px; display: block;">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -566,15 +606,19 @@
 
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
     </script>
     <script src="../static/js/animacion.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js " integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin=" anonymous "></script>
 
     <script src="../static/js/login.js"></script>
+
+
+    <script type="text/javascript" src="../static/woSlider/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="../static/woSlider/engine1/script.js"></script>
     <script src="../static/js/carrusel.js"></script>
+
 
 
 
