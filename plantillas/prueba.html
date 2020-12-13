@@ -2,15 +2,27 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
 
-  <div id="jose">
-    <p class="hijo"></p>
-  </div>
+    <script>
+        Swal.fire({
+            title: 'exito',
+            text: 'se registro con éxito',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'aceptar',
+        }).then((result) => {
+            window.parent.close();
+            window.open('home.html');
+        });
+    </script>
 
 </body>
 

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     var carusel = document.querySelectorAll('.principal');
     M.Carousel.init(carusel, {
-        duration: 500,
+        duration: 100,
         dist: -180,
         shift: 10,
         numVisible: 8,

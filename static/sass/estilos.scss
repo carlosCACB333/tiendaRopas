@@ -11,6 +11,10 @@ figure {
     margin: 0;
 }
 
+.btn {
+    line-height: normal;
+}
+
 a {
     display: flex;
 }
@@ -293,6 +297,7 @@ body {
                 font-weight: bold;
                 text-shadow: 1 1 1;
                 text-align: center;
+                background-color: ghostwhite;
             }
         }
     }

@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="../static/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../static/woSlider/engine1/style.css" />
-    <script type="text/javascript" src="../static/woSlider/engine1/jquery.js"></script>
+    <link rel="stylesheet" href="../static/css/modal.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
 
     <!--  ------------- -->
 
@@ -39,24 +41,28 @@
             stage = new lib.Stage(canvas);
             //Registers the "tick" event listener.
             fnStartAnimation = function() {
-                    stage.addChild(exportRoot);
-                    createjs.Ticker.framerate = lib.properties.fps;
-                    createjs.Ticker.addEventListener("tick", stage);
-                }
-                //Code to support hidpi screens and responsive scaling.
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
             AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
             AdobeAn.compositionLoaded(lib.properties.id);
             fnStartAnimation();
         }
     </script>
+
+    <script src="../static/js/modal2.js"></script>
+
 </head>
 
 <body onload="init();">
+
     <div class="fondo_animado">
         <header>
             <nav id="nav">
 
-                <a href="home.html">
+                <a href="home.php">
                     <!--    <h4>ropasCLS</h4> -->
 
                     <div id="animation_container" style="background-color:rgba(143, 237, 232, 0.00); width:397px; height:71px">
@@ -78,13 +84,13 @@
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
-                    <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
+                    <li><a href="#" class="waves-effect waves-light btn" id="boton-formulario">¡Regístrate!</a></li>
 
                 </ul>
                 <div class="contenedor-formulario">
                     <div class="formulario" id="formulario">
 
-                        <form action="" class="formulario-login ">
+                        <form class="formulario-login" id="formulario-login" method="POST">
 
                             <div class="form">
                                 <h1>Iniciar Sesión</h1>
@@ -92,7 +98,7 @@
                                     <a href="#">Iniciar sesión con Facebook</a>
                                 </div>
                                 <div class="redes tw">
-                                    <a href="#">    Iniciar sesión con Twitter</a>
+                                    <a href="#"> Iniciar sesión con Twitter</a>
                                 </div>
 
                                 <div class="division">
@@ -105,17 +111,17 @@
                                 </div>
 
                                 <div class="grupo">
-                                    <input type="password" class="caja" id="contraseña" name="clave" required>
+                                    <input type="password" class="caja" id="clave" name="clave" required>
                                     <label for="">Contraseña:</label>
                                 </div>
 
-                                <button type="submit" class="primero">Iniciar sesión</button>
+                                <button type="submit" class="primero" id="iniciar-sesion">Iniciar sesión</button>
 
                                 <div class="recuperar ">
                                     <a href="# "> ¿Olvisdate tu contraseña?</a>
                                 </div>
 
-                                <button type="button " class="segundo " OnClick=""> Registrarse</button>
+                                <button type="button " class="segundo " OnClick="location.href ='registrarse.html'"> Registrarse</button>
 
 
                             </div>
@@ -155,7 +161,7 @@
                     <tr>
                         <td>
                             talla:
-                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                            <select name="tallas" id="" style="display: inline;">
                                 <option value="0">S</option>
                                 <option value="1">M</option>
                                 <option value="1">L</option>
@@ -195,7 +201,7 @@
                     <tr>
                         <td>
                             talla:
-                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                            <select name="tallas" id="" style="display: inline;">
                                 <option value="0">S</option>
                                 <option value="1">M</option>
                                 <option value="1">L</option>
@@ -235,7 +241,7 @@
                     <tr>
                         <td>
                             talla:
-                            <select name="tallas" id="" style="width: 50px;display: inline;">
+                            <select name="tallas" id="" style="display: inline;">
                                 <option value="0">S</option>
                                 <option value="1">M</option>
                                 <option value="1">L</option>
@@ -276,7 +282,7 @@
                         <div class="categorias" id="categorias">
                             <a href="damas.html" data-categoria="moda-mujer"> Moda Mujer<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
                             <a href="hombres.html" data-categoria="moda-hombre"> Moda Hombres<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
-                            <a href="dniños.html" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png"  height="10px" alt=""></i> </a>
+                            <a href="dniños.html" data-categoria="moda-bebe"> Moda Niños<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i> </a>
                             <a href="peruanas.html" data-categoria="hecho-peru"> Hecho En Perú<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
                             <a href="internacionales.html" data-categoria="internacionales"> Marcas Internacionales<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
                             <a href="accesorios.html" data-categoria="accesorios"> Accesosorio<i><img src="../static/img/iconos/siguiente.png" height="10px" alt=""></i></a>
@@ -496,25 +502,55 @@
 
 
         <section class="contenido">
+            <div class="contenedor-contenedor-modal"></div>
 
-            <div id="wowslider-container1">
-                <div class="ws_images">
-                    <ul>
-                        <li>
-                            <a href="http://wowslider.net"><img src="../static/woSlider/data1/images/7_5349.jpg" alt="carousel jquery" title="7 (5)-349" id="wows1_0" /></a>
-                        </li>
-                        <li><img src="../static/woSlider/data1/images/banner5031.jpg" alt="banner50-31" title="banner50-31" id="wows1_1" /></li>
-                    </ul>
-                </div>
-                <div class="ws_bullets">
-                    <div>
-                        <a href="#" title="7 (5)-349"><span><img src="../static/woSlider/data1/tooltips/banner5031.jpg" alt="7 (5)-349"/>1</span></a>
-                        <a href="#" title="banner50-31"><span><img src="../static/woSlider/data1/tooltips/7_5349.jpg" alt="banner50-31"/>2</span></a>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col s12 ">
+                        <h2 class="center-align titulo ">seccion abrigos</h2>
+                        <div class="carousel center_align principal">
+
+                            <?php
+                            include_once '../static/php/conexion.php';
+                            $datos = conexion::getDatos("select  id, producto,precio,ROUND(precio-(descuento*precio/100),2) as oferta,imagen from v_productos");
+                            foreach ($datos as $fila) :
+                            ?>
+
+                                <div class="carousel-item ">
+
+                                    <h2 class="subtitulo"><?php echo $fila->producto ?></h2>
+                                    <div class="linea-division "></div>
+                                    <div class="detalle ">
+                                        <p><?php echo $fila->oferta ?> &nbsp;&nbsp;&nbsp;<del><?php echo $fila->precio ?></del></p>
+                                    </div>
+                                    <div class="boton">
+                                        <p>agregar al carrito</p>
+                                    </div>
+
+                                    <li class="boton-modal" style="padding-top: 10px;">
+                                        <a class="waves-effect waves-light btn">ver</a>
+
+                                    </li>
+
+
+
+                                    <img src="../servidorImagenes/<?php echo $fila->imagen ?>" alt="">
+
+                                    <input type="hidden" class="producto_id" value=<?php echo $fila->id ?>>
+                                </div>
+                               
+
+                            <?php
+                            endforeach;
+
+                            ?>
+                        </div>
                     </div>
                 </div>
-                <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">slider</a> by WOWSlider.com v9.0</div>
-                <div class="ws_shadow"></div>
+
+
             </div>
+
 
 
         </section>
@@ -544,19 +580,23 @@
                     <td>
                         <h4>
                             <a href="#">
-                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/facebook.png" height="40px"></li>facebook</a>
+                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/facebook.png" height="40px"></li>facebook
+                            </a>
                         </h4>
                         <h4>
                             <a href="#">
-                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/instagram.png" height="40px"></li>instagram</a>
+                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/instagram.png" height="40px"></li>instagram
+                            </a>
                         </h4>
                         <h4>
                             <a href="#">
-                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/tw.png" height="40px"></li>twiter</a>
+                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/tw.png" height="40px"></li>twiter
+                            </a>
                         </h4>
                         <h4>
                             <a href="#">
-                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/whatsapp.png" height="40px"></li>watsapp</a>
+                                <li class="btn-floating disabled"><img alt="" src="../static/img/iconos/whatsapp.png" height="40px"></li>watsapp
+                            </a>
                         </h4>
                     </td>
                     <td>
@@ -586,16 +626,14 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-    </script>
+
     <script src="../static/js/animacion.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js " integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin=" anonymous "></script>
+
 
     <script src="../static/js/login.js"></script>
 
 
-    <script type="text/javascript" src="../static/woSlider/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="../static/woSlider/engine1/script.js"></script>
+
     <script src="../static/js/carrusel.js"></script>
 </body>
 

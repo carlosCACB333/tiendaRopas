@@ -14,7 +14,7 @@ $(document).ready(function() {
             $('.modal-titulo').text(titulo);
             $('.modal-precio').text(precio);
         })
-
+        return false;
     });
 
 

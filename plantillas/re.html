@@ -17,7 +17,7 @@
 
     <style>
         .contenido {
-            width: 50%;
+            width: 60%;
             margin: auto;
         }
         
@@ -27,6 +27,12 @@
             margin-top: 50px;
             padding: 80px;
             border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .form-re * {
+            margin: 10px;
         }
         
         .form-re textarea {
@@ -36,17 +42,23 @@
         .form-re input {
             color: white;
         }
+        
+        label {
+            font-size: 1rem;
+        }
     </style>
 </head>
 
 
 
 <body>
+
+    <Strong style="font-size: 2rem;"></Strong>
     <div class="fondo_animado">
         <header>
             <nav id="nav">
 
-                <a href="home.html">
+                <a href="home.php">
                     <h4>ropasCLS</h4>
                 </a>
                 <input type="text" placeholder="buscar...">
@@ -60,16 +72,13 @@
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
-                    <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
-
-
-
+                    <li><a href="#" class="waves-effect waves-light btn" id="boton-formulario">¡Regístrate!</a></li>
 
                 </ul>
                 <div class="contenedor-formulario">
                     <div class="formulario" id="formulario">
 
-                        <form action="" class="formulario-login ">
+                        <form class="formulario-login" id="formulario-login" method="POST">
 
                             <div class="form">
                                 <h1>Iniciar Sesión</h1>
@@ -90,17 +99,17 @@
                                 </div>
 
                                 <div class="grupo">
-                                    <input type="password" class="caja" id="contraseña" name="clave" required>
+                                    <input type="password" class="caja" id="clave" name="clave" required>
                                     <label for="">Contraseña:</label>
                                 </div>
 
-                                <button type="submit" class="primero">Iniciar sesión</button>
+                                <button type="submit" class="primero" id="iniciar-sesion">Iniciar sesión</button>
 
                                 <div class="recuperar ">
                                     <a href="# "> ¿Olvisdate tu contraseña?</a>
                                 </div>
 
-                                <button type="button " class="segundo " OnClick=""> Registrarse</button>
+                                <button type="button " class="segundo " OnClick="location.href ='registrarse.html'"> Registrarse</button>
 
 
                             </div>
@@ -484,45 +493,124 @@
         <section class="contenido">
             <form action="" class="form-re">
 
-                <h3>formulario de reclamaciones</h3>
+                <h3 style=" grid-column-start: 1;grid-column-end: 3;">formulario de reclamaciones</h3>
+                <div class="card-panel  light-green " style=" grid-column-start: 1;grid-column-end: 3; padding: 10px;">datos de la persona que presenta el reclamo</div>
 
                 <div>
-                    <label for=""> nombre del cliente</label>
+                    <label for=""> tipo de documento</label>
+                    <select name="" id="">
+                       <option value="">DNI</option>
+                       <option value="">pasaporte</option>
+                   </select>
+                </div>
+
+                <div>
+                    <label for="">numero de ducumento</label>
                     <input type="text">
                 </div>
 
                 <div>
-                    <label for="">apellido del cliente</label>
-                    <input type="text">
-                </div>
-
-                <div> <label for="">telefono del cliente</label></div>
-                <input type="number">
-                <div>
-                    <label for="">serie del producto</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label for="">nombre del producto</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label for="">numero de factura</label>
+                    <label for="">nombres</label>
                     <input type="number">
                 </div>
 
                 <div>
-                    <label for="">fecha de compra</label>
-                    <input type="datetime">
+                    <label for="">apellidos</label>
+                    <input type="text">
+                </div>
 
+                <div>
+                    <label for="">tipo de respuesta</label>
+                    <select name="" id="">
+                       <option value="">correo electronico</option>
+                       <option value="">direccion domiciciliaria</option>
+                   </select>
+                </div>
+
+                <div>
+                    <label for="">direccion</label>
+                    <input type="number">
                 </div>
 
 
                 <div>
+                    <label for="">departamento</label>
+                    <input type="datetime">
+
+                </div>
+                <div>
+                    <label for="">provincia</label>
+                    <input type="datetime">
+
+                </div>
+                <div>
+                    <label for="">distrito</label>
+                    <input type="datetime">
+
+                </div>
+                <div>
+                    <label for="">telefono</label>
+                    <input type="datetime">
+
+                </div>
+                <div>
+                    <label for="">correo</label>
+                    <input type="email" placeholder="ejemplo@hotmail.com">
+
+                </div>
+
+
+                <div class="card-panel  light-green " style=" grid-column-start: 1;grid-column-end: 3; padding: 10px;">informacion general</div>
+                <div>
+                    <label for="">identificacion del bien contratado</label>
+                    <select name="" id="">
+                        <option value="">producto</option>
+                        <option value="">servicio</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="">monto reclamado</label>
+                    <input type="text">
+
+                </div>
+                <div>
+                    <label for="">tipo de reclamo</label>
+                    <input type="text">
+
+                </div>
+                <div>
+                    <label for="">motivo de reclamo</label>
+                    <select name="" id="">
+                        <option value="">atencion inadecuada</option>
+                        <option value="">intervención inapropiada</option>
+                    </select>
+
+                </div>
+                <div style=" grid-column-start: 1;grid-column-end: 3;">
+                    <label for="">descripción del producto</label>
+                    <textarea name="" id="" cols="5" rows="1" style="height: 5rem;"></textarea>
+
+                </div>
+
+
+                <div class="card-panel  light-green " style=" grid-column-start: 1;grid-column-end: 3; padding: 10px;">detalle de reclamo</div>
+
+                <div style=" grid-column-start: 1;grid-column-end: 3;">
+                    <label for="">tipo</label>
+                    <select name="" id="">
+                       <option value="">  reclamo </option>
+                       <option value=""> queja</option>
+                   </select>
+                </div>
+                <div style=" grid-column-start: 1;grid-column-end: 3;">
                     <label for="">detalle del reclamo</label>
-                    <textarea name="" id="" cols="30" rows="1" style="height: 10rem;"></textarea>
+                    <textarea name="" id="" cols="30" rows="1" style="height: 5rem;"></textarea>
+                </div>
+                <div style=" grid-column-start: 1;grid-column-end: 3;">
+                    <label for="">pedido</label>
+                    <textarea name="" id="" cols="30" rows="1" style="height: 5rem;"></textarea>
                 </div>
 
 
@@ -612,6 +700,12 @@
 
     <script src="../static/js/login.js"></script>
     <script src="../static/js/carrusel.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
 
 
 

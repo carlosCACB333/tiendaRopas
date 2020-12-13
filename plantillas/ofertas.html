@@ -20,7 +20,7 @@
         <header>
             <nav id="nav">
 
-                <a href="home.html">
+                <a href="home.php">
                     <h4>ropasCLS</h4>
                 </a>
                 <input type="text" placeholder="buscar...">
@@ -34,16 +34,13 @@
                 </ul>
 
                 <ul class="right hide-on-med-and-down " id="tbn_login">
-                    <li><a href="#" class="waves-effect waves-light btn">¡Regístrate!</a></li>
-
-
-
+                    <li><a href="#" class="waves-effect waves-light btn" id="boton-formulario">¡Regístrate!</a></li>
 
                 </ul>
                 <div class="contenedor-formulario">
                     <div class="formulario" id="formulario">
 
-                        <form action="" class="formulario-login ">
+                        <form class="formulario-login" id="formulario-login" method="POST">
 
                             <div class="form">
                                 <h1>Iniciar Sesión</h1>
@@ -64,17 +61,17 @@
                                 </div>
 
                                 <div class="grupo">
-                                    <input type="password" class="caja" id="contraseña" name="clave" required>
+                                    <input type="password" class="caja" id="clave" name="clave" required>
                                     <label for="">Contraseña:</label>
                                 </div>
 
-                                <button type="submit" class="primero">Iniciar sesión</button>
+                                <button type="submit" class="primero" id="iniciar-sesion">Iniciar sesión</button>
 
                                 <div class="recuperar ">
                                     <a href="# "> ¿Olvisdate tu contraseña?</a>
                                 </div>
 
-                                <button type="button " class="segundo " OnClick=""> Registrarse</button>
+                                <button type="button " class="segundo " OnClick="location.href ='registrarse.html'"> Registrarse</button>
 
 
                             </div>
