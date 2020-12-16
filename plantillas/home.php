@@ -11,60 +11,25 @@
     <link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
     <link rel="stylesheet" href="../static/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--  para el icono de la seccion contactos -->
 
     <link rel="stylesheet" type="text/css" href="../static/woSlider/engine1/style.css" />
 
     <script type="text/javascript" src="../static/woSlider/engine1/jquery.js"></script>
     <link rel="stylesheet" href="../static/css/modal.css">
     <link rel="stylesheet" href="../static/css/novedades.css">
+    <link rel="stylesheet" href="../static/css/texto.css">
     <!--  ------------- -->
 
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script src="../static/js/titulo.js"></script>
+   
+    <script src="../static/js/boton pulsar con giro.js"></script>
 
-    <script>
-        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 
-        function init() {
-            canvas = document.getElementById("canvas");
-            anim_container = document.getElementById("animation_container");
-            dom_overlay_container = document.getElementById("dom_overlay_container");
-            var comp = AdobeAn.getComposition("BE4B3D9035CC0047BF7CB3952285B029");
-            var lib = comp.getLibrary();
-            handleComplete({}, comp);
-        }
-
-        function handleComplete(evt, comp) {
-            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-            var lib = comp.getLibrary();
-            var ss = comp.getSpriteSheet();
-            exportRoot = new lib.titulo();
-            stage = new lib.Stage(canvas);
-            //Registers the "tick" event listener.
-            fnStartAnimation = function() {
-                stage.addChild(exportRoot);
-                createjs.Ticker.framerate = lib.properties.fps;
-                createjs.Ticker.addEventListener("tick", stage);
-            }
-            //Code to support hidpi screens and responsive scaling.
-            AdobeAn.makeResponsive(false, 'both', false, 1, [canvas, anim_container, dom_overlay_container]);
-            AdobeAn.compositionLoaded(lib.properties.id);
-            fnStartAnimation();
-        }
-    </script>
     <script src="../static/js/modal2.js"></script>
 
     <style>
-        .contactos h3,
-        .contactos h5 {
-            padding: 0;
-            margin: 0;
-        }
-
-        .contactos a {
-            display: inline;
-        }
+     
 
         .oferta-flotante {
             position: absolute;
@@ -147,7 +112,7 @@
 
 </head>
 
-<body onload="init();">
+<body>
 
     <div class="fondo_animado">
         <header>
@@ -155,11 +120,36 @@
 
                 <a href="home.html">
                     <!--    <h4>ropasCLS</h4> -->
+                    <div class="logo-empresa">
 
-                    <div id="animation_container" style="background-color:rgba(143, 237, 232, 0.00); width:397px; height:71px">
-                        <canvas id="canvas" width="397" height="71" style="position: absolute; display: block; background-color:rgba(143, 237, 232, 0.00);"></canvas>
-                        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:397px; height:71px; position: absolute; left: 0px; top: 0px; display: block;">
-                        </div>
+                        <svg class="svg-text" width="2.2em" height="0.55em" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <symbol id="stroke-2">
+                                    <text class="bold" x="50%" y="67%" fill="none" stroke-width=".1em" stroke-linecap="round" stroke-linejoin="round" paint-order="stroke fill" text-anchor="middle">ropasCLS</text>
+                                </symbol>
+                                <symbol id="fill-2">
+                                    <text class="bold" x="50%" y="60%" text-anchor="middle">ropasCLS</text>
+                                </symbol>
+                            </defs>
+                            <g class="svg-text__shaded__stroke" stroke="#00cccc">
+                                <use y="5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke-2" opacity="0.5" filter="url(#drop-stroke-shadow)"></use>
+                                <use y="3%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke-2"></use>
+                                <use y="2%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke-2"></use>
+                                <use y="1%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke-2"></use>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke-2" stroke="cyan"></use>
+                            </g>
+                            <g fill="#e6e6e6">
+                                <use class="svg-text__shaded" y="7%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="6.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="6%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="5.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="4.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="4%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="3.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2"></use>
+                                <use y="3%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2" fill="white"></use>
+                            </g>
+                        </svg>
                     </div>
 
 
@@ -167,7 +157,7 @@
                 <input type="text" placeholder="buscar...">
 
                 <ul>
-                    <li><a href="#">tiendas</a></li>
+                    
                     <li><a href="Reclamos.html">reclamos</a></li>
                     <li><a href="Servicios.html">servicio</a></li>
                     <li><a href="Nosotros.html">nosotros</a></li>
@@ -581,7 +571,7 @@
                     <li class=""><a href="novedades.html">novedades</a></li>
                     <li><a href="ofertas.html">ofertas</a></li>
                     <li><a href="masVendidos.html">más vendidos</a></li>
-                    <li><a href="vistas/damas.html">más buscados</a></li>
+                   
 
 
                 </ul>
@@ -630,8 +620,13 @@
                             La ropa de la mejor calidad que satisfaga tus necesidades y gusto
                         </h6>
 
-                        <div class="boton cuatro">
+                        <!--  <div class="boton cuatro">
                             <p> ver catálogo</p>
+                        </div> -->
+                        <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:300px; height:300px;margin:3px auto;">
+                            <canvas id="canvas" width="300" height="300" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
+                            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:300px; height:300px; position: absolute; left: 0px; top: 0px; display: block;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -835,12 +830,10 @@
 
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-    </script>
+
     <script src="../static/js/animacion.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js " integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin=" anonymous "></script>
 
     <script src="../static/js/login.js"></script>
 

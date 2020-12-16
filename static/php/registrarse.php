@@ -65,7 +65,7 @@ class registro
                         confirmButtonText: 'aceptar',
                     }).then((result) => {
                         window.parent.close();
-                        window.open('../../plantillas/home.html');
+                        window.open('../../plantillas/home.php');
                     });
                 </script>
             
