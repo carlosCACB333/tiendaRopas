@@ -11,26 +11,25 @@
     <link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
     <link rel="stylesheet" href="../static/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--  para el icono de la seccion contactos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  para el icono de la seccion contactos -->
+    <link rel="stylesheet" href="../static/css/texto.css">
+
 
     <link rel="stylesheet" type="text/css" href="../static/woSlider/engine1/style.css" />
-
     <script type="text/javascript" src="../static/woSlider/engine1/jquery.js"></script>
     <link rel="stylesheet" href="../static/css/modal.css">
     <link rel="stylesheet" href="../static/css/novedades.css">
-    <link rel="stylesheet" href="../static/css/texto.css">
+
     <!--  ------------- -->
 
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-   
     <script src="../static/js/boton pulsar con giro.js"></script>
 
 
     <script src="../static/js/modal2.js"></script>
 
     <style>
-     
-
         .oferta-flotante {
             position: absolute;
             left: 5px;
@@ -118,7 +117,7 @@
         <header>
             <nav id="nav">
 
-                <a href="home.html">
+                <a href="home.php">
                     <!--    <h4>ropasCLS</h4> -->
                     <div class="logo-empresa">
 
@@ -157,7 +156,7 @@
                 <input type="text" placeholder="buscar...">
 
                 <ul>
-                    
+
                     <li><a href="Reclamos.html">reclamos</a></li>
                     <li><a href="Servicios.html">servicio</a></li>
                     <li><a href="Nosotros.html">nosotros</a></li>
@@ -265,9 +264,7 @@
                         <td rowspan="4">
                             <img src="../static/img/niños/4.jpg" width="120px" alt="">
                         </td>
-                        <td>
-                            <b> Blusa Manga Corta </b>
-                        </td>
+                        <td><strong> Blusa Manga Corta </strong></td>
                     </tr>
 
 
@@ -571,7 +568,7 @@
                     <li class=""><a href="novedades.html">novedades</a></li>
                     <li><a href="ofertas.html">ofertas</a></li>
                     <li><a href="masVendidos.html">más vendidos</a></li>
-                   
+
 
 
                 </ul>
@@ -669,7 +666,7 @@
 
                     <div class="detalle">
                         <h1 class="light-green-text">LOOK DE LA SEMANA </h1>
-                        <p>Mix & Match. Combina lo sofisticado de nuestro saco de Suede Scuba (27070) con una cafarena (27128) y unas leggings del mismo tono (27137) para crear un contraste de encanto. Se convertirá en tu favorito de la temporada. #ColecciónOI20</p>
+                        <p>La comodidad y la practicidad son claves para un varón que le gusta más que nunca verse bien. Las prendas que no pueden faltar en el guardarropas esta temporada</p>
                         <div class="boton cuatro">
                             <p> comprar ahora</p>
                         </div>
